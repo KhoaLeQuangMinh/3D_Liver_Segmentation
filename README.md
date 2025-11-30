@@ -54,17 +54,12 @@ I approached this problem by iterating through four distinct architectural strat
 | V3 | ConvLSTM | 2.5D Sequence Modeling | Comparable to Baseline |
 | V1 | 3D CNN | Volumetric Convolution | Low |
 
-## 🖼️ Visualizations
-
-**Comparison of Experiments:**
-*(Please insert a screenshot here showing: Original CT | Ground Truth | UNet++ Prediction)*
-![Segmentation Result](https://via.placeholder.com/800x200?text=Insert+Your+Segmentation+Screenshots+Here)
-
 ## 🛠️ Installation & Usage
 
 1. Clone the repository:
    ```bash
    git clone https://github.com/KhoaLeQuangMinh/Liver_Segmentation.git
+
 
 
 
