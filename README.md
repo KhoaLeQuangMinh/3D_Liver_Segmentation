@@ -18,7 +18,7 @@ This repository documents an iterative research process, moving from volumetric 
 *   **Outcome:** **Suboptimal.** The model struggled to converge, likely due to the limited dataset size relative to the parameter explosion in 3D convolutions.
 *   *Status:* Archived (`notebooks/LTS_version1.ipynb`)
 
-### Experiment 2: UNet++ with Connected Component Analysis (High Performance)
+### Experiment 2: UNet++ with 3D Largest Connected Component (High Performance)
 *   **Approach:** Shifted to a 2D slice-by-slice segmentation using **UNet++**, utilizing nested skip connections to capture multi-scale features.
 *   **Post-Processing:** Implemented **Largest 3D Connected Component Analysis**. By reconstructing the 3D volume from 2D predictions and keeping only the largest connected mass, false positives were significantly reduced.
 *   **Outcome:** Excellent baseline. The post-processing alone provided a massive boost in Dice score.
@@ -30,7 +30,7 @@ This repository documents an iterative research process, moving from volumetric 
 *   **Outcome:** **Exploratory.** Performance did not exceed the UNet++ baseline. However, it offered insights into how inter-slice consistency affects boundary definitions.
 *   *Status:* `notebooks/LTS_version3.ipynb`
 
-### Experiment 4: Cascade Classifier & Specialist Ensemble (🏆 Best Performance)
+### Experiment 4:  UNet++ Ensemble (🏆 Best Performance)
 *   **Hypothesis:** A single model struggles to balance "finding the liver" and "segmenting the tumor." A specialized pipeline should perform better (I got this idea from @NDK2212, Nguyen Duc Khang from AIMA Warm-up Program, and I want to apply the classification with my current version 2 pipeline).
 *   **Approach:** Designed a multi-stage **Cascade Pipeline**:
     1.  **Slice Classification:** A lightweight binary classifier filters slices as "Liver-containing" vs. "Background."
@@ -56,6 +56,7 @@ This repository documents an iterative research process, moving from volumetric 
 1. Clone the repository:
    ```bash
    git clone https://github.com/KhoaLeQuangMinh/Liver_Segmentation.git
+
 
 
 
