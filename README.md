@@ -12,9 +12,6 @@ This project focuses on the automated segmentation of liver tumors from CT scans
 This repository documents an iterative research process, moving from volumetric 3D approaches to a sophisticated **Cascade Ensemble pipeline** that achieves State-of-the-Art (SOTA) performance on the validation set.
 
 ## 🔬 Methodology & Experimentation Log
-
-I approached this problem by iterating through four distinct architectural strategies. The goal was to solve the "Class Imbalance" problem where the liver occupies a small portion of the total CT volume.
-
 ### Experiment 1: Volumetric 3D CNN (Baseline)
 *   **Approach:** Attempted to capture the full spatial context using a standard 3D CNN on voxel data.
 *   **Preprocessing:** Basic normalization and resizing.
@@ -59,6 +56,7 @@ I approached this problem by iterating through four distinct architectural strat
 1. Clone the repository:
    ```bash
    git clone https://github.com/KhoaLeQuangMinh/Liver_Segmentation.git
+
 
 
 
