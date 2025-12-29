@@ -46,7 +46,7 @@ This repository documents an iterative research process, moving from volumetric 
 
 | Experiment | Architecture | Key Technique | Performance (Dice) |
 | :--- | :--- | :--- | :--- |
-| **V4** | **Cascade Ensemble** | **Classification Gating** | **0.9720** (Best) |
+| **V4** | **UNett++ Ensemble** | **Classification Slice** | **0.9720** (Best) |
 | V2 | UNet++ (2D) | 3D Post-Processing (CCA) | 0.9717 |
 | V3 | ConvLSTM | 2.5D Sequence Modeling | Comparable to Baseline |
 | V1 | 3D CNN | Volumetric Convolution | Low |
@@ -56,6 +56,7 @@ This repository documents an iterative research process, moving from volumetric 
 1. Clone the repository:
    ```bash
    git clone https://github.com/KhoaLeQuangMinh/Liver_Segmentation.git
+
 
 
 
